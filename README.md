@@ -16,15 +16,15 @@ Keras 2.0.4
 testKeras_MNIST is just a simple test of Keras using the included MNIST dataset
 
 In the NotMNIST folder are various tests in the following order : 
-1 - preparedata : download and prepare the data
-2 - setupdata : some setup 
-3 - firstlearning : simple 1 layer fully connected using gradient descent
-4 - firstSGD : simple 1 layer fully connected using batches and SGD
-5 - multilayer_l2_dropout_nn : multiple layer, fully connected with some tests on regularization ( the current version of teh file is with L2)
-6 - convnn - 2 different models using convolution layer and max pooling
-7 - notmnist_keras : Keras implementation of the convolution and maxpool version
-8 - testinception : using Keras, a version of inception_v3 cut after the first incepton module for computation cost purpose ( achieved 97.3 on the test set of the NotMNIST) 
-9 - conv-RNN-seqofimages : using sequences of 1-5 images from the NotMNIST data , this uses a few layer of convolution and max pool followed by a LSTM to predict a sequence of characters.
+1) preparedata : download and prepare the data
+2) setupdata : some setup 
+3) firstlearning : simple 1 layer fully connected using gradient descent
+4) firstSGD : simple 1 layer fully connected using batches and SGD
+5) multilayer_l2_dropout_nn : multiple layer, fully connected with some tests on regularization ( the current version of teh file is with L2)
+6) convnn - 2 different models using convolution layer and max pooling
+7) notmnist_keras : Keras implementation of the convolution and maxpool version
+8) testinception : using Keras, a version of inception_v3 cut after the first incepton module for computation cost purpose ( achieved 97.3 on the test set of the NotMNIST) 
+9) conv-RNN-seqofimages : using sequences of 1-5 images from the NotMNIST data , this uses a few layer of convolution and max pool followed by a LSTM to predict a sequence of characters.
 
 In the  RNN folder:
 - frankensteining is training a character by character RNN on the novel Frankenstein by Mary Shelley ... results were getting stuck on a repetition : to avoid taht I sued a temperature sample function found in Francois choolet github examples : https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
